@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    background-color: rgb(205, 20, 20);
+    border: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+}

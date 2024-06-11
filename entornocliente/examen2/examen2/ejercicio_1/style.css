@@ -1,0 +1,37 @@
+body {
+  font-family: "Arial", "cursive", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: cornsilk;
+}
+#encabezado_div h1 {
+  align-items: center;
+  text-align: center;
+}
+#central_div {
+  padding: 20px;
+}
+#central_div p {
+  padding: 20px;
+}
+.parrafo {
+  padding: 20px;
+  background-color: lightseagreen;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  background-color: darkorange;
+  border: 1px solid;
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: gold;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}

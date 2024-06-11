@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad Opacity</title>
+    <style>
+         
+    div{position: absolute;
+        top: 0px;
+        left:0px;
+         }
+
+    #primero{
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        top:50px;
+        left:50px;
+    }
+
+    #segundo{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black; 
+        top:75px;
+        left:75px;
+        background-color: red;
+    }
+
+    #tercero{
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        top:100px;
+        left:100px;
+        background-color: green;
+    }
+
+    #segundo, #tercero {opacity: 0.5;}
+
+  p {position:relative;
+    left: 200px;
+
+    }
+
+    </style>
+</head>
+<body>
+    <h2>PROPIEDAD OPACITY</h2>
+
+<div>    
+    <div id="primero"></div>
+    <div id="segundo"></div>
+    <div id="tercero"></div>
+</div>
+<p>La propiedad <strong>opacity</strong> se establece mediante un número comprendido entre 0.0 y 1.0
+    (en donde, 0.0 es transparente y 1.0 es totalmente opaco). <br>
+    En este ejemplo, se establece la propiedad <em>opacity</em> con un valor del 50% sobre dos elementos con identificador <em>segundo y tercero</em>.</div></p>
+
+    
+</body>
+</html>

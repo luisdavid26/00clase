@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Propiedad flex-wrap</title>
+    <style>
+        #principal {
+            display:flex;
+            justify-content: center;
+            flex-wrap:nowrap;
+            width: 600px;
+            height: 210px;
+            border: 2px solid black; 
+            background-color: cornsilk;
+        }
+        
+        #caja1 {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            background-color: rgba(255, 0, 0, 0.37);
+        }
+    
+        #caja2 {
+            width: 100px;
+            height: 100px;
+            border: 2px solid blue;
+            background-color: rgba(0, 0, 255, 0.429);
+
+        }
+
+        #caja3{
+            width: 100px;
+            height: 100px;
+            border: 2px solid green;
+            background-color: rgba(0, 128, 0, 0.4);
+        }
+
+        #caja4{
+            width: 400px;
+            height: 100px;
+            border: 2px solid orange;
+            background-color: rgba(255, 166, 0, 0.5);
+        }
+
+        #principal-reverse {
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+            width: 600px;
+            height: 210px;
+            border: 2px solid black; 
+            background-color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propiedad flex-wrap</h1>
+    <p>La propiedad <strong>flex-wrap</strong> declara que el contenedor 
+    flexible puede tener una o varias líneas. </p>
+    <p>La propiedad posee tres valores posibles:
+        <ul>
+            <li><strong>nowrap:</strong> declara el contenedor flexible como un contenedor
+            de línea simple.</li>
+            <li><strong>wrap:</strong> declara al contenedor como de línea múltiple, y ordena 
+            las líneas desde la izquierda a derecha o desde la parte superior a la parte inferior.</li>
+            <li><strong>wrap-reverse:</strong> invierte el orden preestablecido</li>
+        </ul>
+    </p>
+
+    <h3>Propiedad flex-wrap: wrap</h3>
+    <div id="principal">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    <h3>Propiedad flex-wrap: wrap-reverse</h3>
+    <div id="principal-reverse">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Se añade la etiqueta shrink-to-fit=no para garantizar que el zoom del móvil está activo
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Diseño responsive</title>
+    <style>
+        .row>[class^="col"]{
+           padding-top: .75rem;
+           padding-bottom: .75rem;
+           background-color: rgba(86,61,124,.15);
+           border: 1px solid rgba(86,61,124,.2);
+       }          
+   </style>
+</head>
+<body>
+    <h1>Diseño responsivo</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3">Elemento1</div>
+            <div class="col-12 col-sm-8 col-md-6 col-lg-4 offset-lg-4 col-xl-3 offset-xl-6">Elemento 2</div>
+        </div>
+    </div>
+
+<br>
+ <ul>
+    <ol>
+        <li>Versión <strong>x-small</strong>, el Elemento 1 y el Elemento 2 ocupaán todo el ancho de pantalla
+            y quedarán uno debajo del otro.</li>
+        <li>En la versión <strong>small</strong>, el Elemento 1 y utilizará ocho columnas y el Elemento 2, cuatro.</li>
+        <li>En la versión <strong>medio</strong>, los elementos ocupan seis columnas cada una.</li>   
+        <li>En la version <strong>large</strong>, los elementos usarán una tercera parte, pero el Elemento 2 añadirá un espacio
+        en blanco entre los elementos de cuatro columnas para separarse del Elemento 1.  </li>
+        <li>En la version <strong>extra large y extra extra large</strong>,los elementos ocuparán una cuarta parte
+        de la pantalla, pero el Elemento 2 añadirá un espacio en blanco entre ellos de media pantalla.</li>
+    </ol>
+ </ul>
+
+</body>
+</html>

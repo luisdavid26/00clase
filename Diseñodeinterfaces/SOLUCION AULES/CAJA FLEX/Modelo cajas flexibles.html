@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>MODELO CAJAS FLEXIBLES</title>
+    <style>
+
+    .columna {display:flex;}
+    p{ font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;}
+    
+    .rojo {border:solid 3px red;
+        background-color: azure;
+    margin: 10px;
+    }
+
+    
+
+     .azul {border:solid 3px rgb(98, 0, 255);
+        background-color: azure;}
+
+      .columna-reverse{display:flex;
+        flex-direction: row-reverse;    
+    }
+      .fila{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .fila-reverse{
+        display: flex;
+        flex-direction:column-reverse;
+        margin:30px 30px;  
+      }
+      
+      .azul-reverse{
+        border: dotted 3px blue;
+        background-color:bisque ;
+        margin:20px;
+      }
+
+      #amarillo {background-color: yellow;
+        border: solid black 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>MODELO CAJAS FLEXIBLES</h1>
+    <h2>display: flex;</h2>
+    <p>Al poner en el CCS la propiedad display flex todas las cajas se mueven automáticament
+        de izquierda a derecha
+    </p>
+    <div class="columna">
+        <div class="rojo">
+            <h3>1</h3>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="rojo">
+            <h3>2</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+         </div>
+        
+        <div class="rojo">
+            <h3>3</h3>
+            Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Placeat voluptas adipisci quam quisquam aliquid 
+            laudantium assumenda, tenetur ipsa dolor. 
+        </div>
+        <div class="rojo">
+            <h3>4</h3>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit.</p>
+        </div>
+
+        <div class="rojo">
+            <h3>5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Placeat voluptas adipisci quam quisquam aliquid 
+            laudantium assumenda, tenetur ipsa dolor. </p>
+        </div>
+    </div>
+
+
+    <h2>display:row-reverse;</h2>
+    <p>Al poner en el CCS la propiedad display flex todas las cajas se mueven automáticament
+        de derecha a izquierda
+    </p>
+    <div class="columna-reverse">
+        <div class="azul">
+            <h3>1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit.</p>
+        </div>
+
+        <div id="amarillo">
+             <h3>2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit.</p>
+         </div>
+        
+        <div class="azul">
+            <h3>3</h3>
+            Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Placeat voluptas adipisci quam quisquam aliquid 
+            laudantium assumenda, tenetur ipsa dolor. 
+        </div>
+        <div class="azul">
+            <h3>4</h3>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. .</p>
+        </div>
+
+        <div class="azul">
+            <h3>5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Placeat voluptas adipisci quam quisquam aliquid 
+            laudantium assumenda, tenetur ipsa dolor.</p>
+        </div>
+    </div>
+
+    <h3>display: flex y dirección
+        flex-direction: column
+    </h3>
+    <div class="fila">
+        <div class="azul">
+            <h3>1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit.</p>
+        </div>
+
+        <div class="azul">
+             <h3>2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit.</p>
+         </div>
+        
+        <div class="azul">
+            <h3>3</h3>
+            Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Placeat voluptas adipisci quam quisquam aliquid 
+            laudantium assumenda, tenetur ipsa dolor. 
+        </div>
+        <div class="azul">
+            <h3>4</h3>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. .</p>
+        </div>
+
+        <div class="azul">
+            <h3>5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Placeat voluptas adipisci quam quisquam aliquid 
+            laudantium assumenda, tenetur ipsa dolor.</p>
+        </div>
+    </div>
+
+    <h3>display: flex y dirección
+        flex-direction: column-reverse
+    </h3>
+    <div class="fila-reverse">
+        <div class="azul-reverse">
+            <h3>1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit.</p>
+        </div>
+
+        <div class="azul-reverse">
+             <h3>2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit.</p>
+         </div>
+        
+        <div class="azul-reverse">
+            <h3>3</h3>
+            Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Placeat voluptas adipisci quam quisquam aliquid 
+            laudantium assumenda, tenetur ipsa dolor. 
+        </div>
+        <div class="azul-reverse">
+            <h3>4</h3>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. .</p>
+        </div>
+
+        <div class="azul-reverse">
+            <h3>5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Placeat voluptas adipisci quam quisquam aliquid 
+            laudantium assumenda, tenetur ipsa dolor.</p>
+        </div>
+    </div>
+    
+
+</body>
+</html>

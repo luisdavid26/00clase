@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones</title>
+    <link rel="stylesheet" href="./css/transiciones.css">
+</head>
+<body>
+    <h1>TRANSICIONES</h1>
+    <h2>Etiqueta transition</h2>
+    <p>Son pequeñas animacines que siguen las mismas características que las transformaciones
+        (cambio de posición, tamaño, rotación,etc.), aunque con la capacidad de poder especificar
+        un tiempo para que se produzca dicha transformación, y así poder utilizarla como una animación sencilla</p>
+    <p>Los parámetros se especifican de la siguiente forma:
+        transition:[propiedad a modificar] [Duración] [Tipo de animación] [Retardo];</p>
+
+    <p>Por ejemplo: transition: width 2s ease-out 0.5s;</p>
+
+    <h2>Descripición de las parámetros que se utilizan en la propiedad transition</h2>
+   <ul>
+    <li>Propiedades a modificar: Estas son las propiedades que se pueden modificar:
+        <ul>
+            <li>all</li>
+            <li>background-</li>
+            <li>color</li>
+            <li>color</li>
+            <li>border-radius</li>
+            <li>color</li>
+            <li>top</li>
+            <li>bottom</li>
+            <li>left</li>
+            <li>right</li>
+            <li>box-shadow</li>
+            <li>width</li>
+            <li>height</li>
+            <li>line-height</li>
+            <li>margin</li>
+            <li>opacity</li>
+            <li>word-spacing</li>
+            <li>letter-spacing</li>
+            <li>fill</li>
+            <li>padding</li>
+            <li>stroke</li>
+            <li>text-shadow</li>
+            <li>vertical-align</li>
+            <li>visibility</li>
+            <li>z-index</li>
+        </ul>
+    </li>
+    <li>Duración en segundos: número de segundos que va a durar la animación, por ejemplo:3s. </li>
+    <li>Tipo de animación (opcional): nos permite indicar como va a ser el movimiento de la animación.
+        <ul>
+            <li>linear. La velocidad de la animación es uniforme durante todo el recorrido</li>
+            <li>ease. La velocidad se acelera el inicio, luego se retarda un poco y se acelera al final de nuevo</li>
+            <li>ease-in. La animación empieza lentamente y va aumentando progresivamente</li>
+            <li>ease-out. La animación empieza muy rápida y va descendiendo progresivamente</li>
+            <li>ease-in-out. La animación empieza y acaba lentamente, y es enla parte central del recorrido donde la velocidad es más rápida</li>
+        </ul>
+    <img src="./img/Tipo de animaciones.png"/>
+    </li>
+    <li>Retardo: tiempo (en segundos) que el navegador esperará antes de poner en marcha la animación.</li>
+   </ul>
+   <br>
+   <h2>Compatibilidad con todos los navegadores</h2>
+   <p>Para que la propiedad transition funcione en todos los navegadores hemos de repetir la propiedad anteponiendo los 
+    prefijos para cada uno de los navegadores:
+    <ul>
+        <li>-webkit- (para Chrome y Safari)</li>
+        <li>-moz- (para Firefox)</li>
+        <li>-o- (para Opera)</li>
+        <li>-ms- (para Internet Explorer)</li>
+    </ul>
+   </p>
+
+</body>
+</html>

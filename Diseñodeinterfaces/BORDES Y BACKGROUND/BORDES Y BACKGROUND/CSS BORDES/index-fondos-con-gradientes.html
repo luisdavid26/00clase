@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FONDOS CON GRADIENTES</title>
+    <style>
+        body {text-align:justify;}
+        h2 {text-align: center;
+        color:green;}
+
+        h3 { font: bold  14px;}
+
+        #titulo-lineal{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 20px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            background: linear-gradient(to bottom, #FFFFFF, #006699);
+            background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+            background: -moz-linear-gradient(top, #FFFFFF, #006699);
+        }
+
+        #titulo-grados{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 20px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            background: linear-gradient(30deg, #FFFFFF, #006699);
+            background: -webkit-linear-gradient(30deg, #FFFFFF, #006699);
+            background: -moz-linear-gradient(30deg, #FFFFFF, #006699);
+        }
+        
+        #titulo-grados-puntos{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 20px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            background: linear-gradient(30deg, #FFFFFF 50%, #006699 90%);
+            background: -webkit-linear-gradient(30deg, #FFFFFF 50%, #006699 90%);
+            background: -moz-linear-gradient(30deg, #FFFFFF 50%, #006699 90%);
+        }
+        
+        #titulo-radial{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 20px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            background: radial-gradient(circle, #FFFFFF 0%, #006699 200%);
+            background: -webkit-radial-gradient(circle, #FFFFFF 0%, #006699 200%);
+            background: -moz-radial-gradient(circle, #FFFFFF 0%, #006699 200%);
+        }
+        
+        
+
+    </style>
+
+</head>
+<body>
+    <h2>FONDOS CON GRADIENTES</h2>
+    <p>Existen dos tipos de gradientes. Para aplicar los gradientes se utiliza
+     la propiedad <strong>background</strong> </p>
+        <ol>
+            <li>Gradiente lineal</li>
+            <li>Gradiente radial</li>
+        </ol>        
+    <h3>Gradiente lineal</h3>
+        <p>Los gradientes lineales se indican con la función <strong>linear-gradient,</strong> que
+        recibe los siguientes parámetros:
+        <ul>
+            <li>Punto de comienzo: indica el punto donde comienza el gradiente.
+                Puede ser especificado en píxeles, porcentaje o usando las palabras clave
+                <strong>top, bottom, left y right.</strong> También puede ser reemplazado
+                por un ángulo para declarar una dirección específica del gradiente.
+            </li>
+
+        <li>Color inicial:indica con que color comenzará el gradiente.</li>
+        <li>Color final: inidca con que color terminará el gradiente</li>
+        </ul>
+    </p>
+
+    <h2>Gradiente lineal</h2>
+   
+    <header id="titulo-lineal">
+        <h1>GRADIENTE LINEAR CON </h1>
+    </header>
+
+    <h2>Gradiente lineal con grados</h2>
+   
+    <header id="titulo-grados">
+        <h1>GRADIENTE LINEAR CON GRADOS</h1>
+    </header>
+
+    <h2>Gradiente lineal con puntos de terminación del gradiente</h2>
+   
+    <header id="titulo-grados-puntos">
+        <h1>GRADIENTE LINEAR CON FINAL DEL GRADIENTE</h1>
+    </header>
+
+    <h3>Gradiente radial</h3>
+    <p>Se utiliza la función <strong>radial-gradient()</strong> y un nuevo atributo de la siguiente forma:
+    </p> 
+
+    <h2>Gradiente radial</h2>
+   
+    <header id="titulo-radial">
+        <h1>GRADIENTE RADIAL</h1>
+    </header>
+
+
+    
+</body>
+</html>

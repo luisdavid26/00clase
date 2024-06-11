@@ -1,0 +1,44 @@
+body{background-color:cornflowerblue;}
+h1{text-align: center;}
+.caja {
+  display: inline-block;
+  background-color: aqua;
+  border: 2px dotted #000;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;;
+  height: fit-content;
+}
+
+.primera-letra {
+  font-size: 1.5em;
+  color: #eeff00; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

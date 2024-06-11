@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Examen tema 1/ejercicio3</title>
+  </head>
+  <body>
+<form action="formulario" method="post" >
+  <fieldset>
+    <legend>datos basicos</legend>
+<a type="name" >Nombre (obligatorio)</a>
+<input type="text" required>
+<br>
+<a type="email" >correo electronico (obligatorio)</a>
+<input type="email" required ><br>
+
+<a type="city" >ciudades que has visitado</a>
+<br>
+<input type="checkbox" >Madrid
+<br>
+<input type="checkbox" >Barcelona
+<br>
+<input type="checkbox" >Madrid
+
+<br>
+<a type="sexo" >sexo:</a>
+<br>
+<input type="radio" >mujer
+<input type="radio" >hombre
+<input type="radio" >otro
+</fieldset>
+
+<fieldset>
+  <legend>datos opcionales</legend>
+  <textarea name="mensaje rows="4" cols="20">escribe aqui su mensaje</textarea>
+  
+  <br><br>
+  
+    <p>seleciona una ciudad</p>
+  <select  name="ciudades">
+  
+    <option >berlin</option>
+    <option >madrid</option>
+    <option >paris</option>
+    <option >londres</option>
+  </select>
+<br>
+<br>
+
+</fieldset>
+<br>
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="restablecer">
+</form>
+<br>
+<br>
+
+  </body>
+</html>

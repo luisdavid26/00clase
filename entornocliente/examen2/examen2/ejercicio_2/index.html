@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Datos Personales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="container_div">
+
+    <div id="encabezado_div">
+      <p>
+      <h1>EJERCICIO 2 - FORMULARIO</h1>
+      </p>
+    </div>
+
+    <div id="central_div">
+
+      <div class="container">
+
+        <h1>Datos Personales</h1>
+
+        <form id="formulario">
+          <label for="nombre"></label>
+          <input type="text" id="nombre" placeholder="Nombre" required><br>
+  
+          <label for="apellidos"></label>
+          <input type="text" placeholder="Apellidos" id="apellidos" required><br>
+  
+          <label for="dni"></label>
+          <input type="text" id="dni" placeholder="DNI" required><br>
+  
+          <label for="telefono"></label>
+          <input type="tel" placeholder="Teléfono" id="telefono" required><br>
+  
+          <label for="email"></label>
+          <input type="email" placeholder="e-mail" id="email" required><br>
+  
+          <button type="button" onclick="guardarDatos()">Guardar</button>
+          <button type="button" onclick="recuperarDatos()">Recuperar</button>
+          <button type="button" onclick="limpiarFormulario()">Limpia formulario</button>
+          <button type="button" onclick="borrarAlmacenamiento()">Borrar Almacenamiento</button>
+        </form>
+
+      </div>
+      
+
+    </div>
+    <div id="footer_div"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

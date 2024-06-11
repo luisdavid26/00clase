@@ -1,0 +1,11 @@
+/* Es la posición vertical, ancho menor que el alto*/
+@media (orientation:portrait) {
+    html{
+        background-color:lightblue;
+    }
+}
+
+/* Es la posición horizontal, ancho mayor que el alto*/
+@media (orientation: landscape){
+    html{background-color: lightcoral;}
+}

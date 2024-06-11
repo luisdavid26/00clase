@@ -1,0 +1,25 @@
+.bloque{
+    display:inline-block;
+}
+
+#martillo {
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+}
+
+#martillo-dcha{
+    position:relative;
+    background-color: rosybrown;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;
+    transform:translate(200px);
+}

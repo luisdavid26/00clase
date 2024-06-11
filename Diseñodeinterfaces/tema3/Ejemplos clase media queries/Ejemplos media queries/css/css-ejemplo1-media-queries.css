@@ -1,0 +1,31 @@
+
+/*
+/* Si la pantalla tiene de ancho menor de 1000px es de color azul*/
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lightblue;
+    }    
+}
+
+/*Si la pantalla tiene un ancho mayor o igual 1000px el color es coral*/
+@media only screen and (min-width: 1000px) {
+    body{
+        background-color:coral;
+    }
+}
+
+*/
+
+/* Si la pantalla tiene de ancho menor de 1000px es de color azul*/
+@media only screen and (max-width < 1000px) {
+    body {
+        background-color: lightblue;
+    }    
+}
+
+/*Si la pantalla tiene un ancho mayor o igual 1000px el color es coral*/
+@media only screen and (min-width > 1000px) {
+    body{
+        background-color:coral;
+    }
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Amousement Park</title>
+  </head>
+
+  <body>
+    <div>
+      <p id="primer_parrafo">Amousement Park</p>
+
+      <p id="segundo_parrafo">
+        CONCEPTO TRATADO EN ESTE EJERCICIO: null y undefined
+      </p>
+    </div>
+    <div>
+      <h1>Instructions</h1>
+      <p>
+        It is your job to provide and maintain parts of the IT system of an
+        amusement park. In particular, you are responsible for the program that
+        manages visitors and tickets.
+      </p>
+      <p>
+        First, you will create a new visitor in the system. Then you will
+        provide a function for revoking a ticket. In tasks 3 and 4, you will
+        work on the ticket tracking system that helps to prevent forgery.
+        Lastly, you will help adapt the system to new legal requirements.
+      </p>
+
+      <hr />
+
+      <h1>1. Create a new visitor</h1>
+      <p>
+        When visitors come to the amusement park for the first time, they need
+        to register by entering their name and age in a terminal and agreeing to
+        the terms and conditions. Of course, they also need to buy a ticket.
+        Each ticket has an identifier like <code>H32AZ123</code>.
+      </p>
+      <p>
+        Write a function <code>createVisitor</code> that accepts three
+        arguments.
+      </p>
+
+      <ul>
+        <li>The name of the visitor.</li>
+        <li>The age of the visitor.</li>
+        <li>The identifier of the ticket that the visitor bought.</li>
+      </ul>
+
+      <p>
+        The function should return an object that holds this information. The
+        keys in the object should be called <code>name</code>,
+        <code>age</code> and <code>ticketId</code>.
+      </p>
+      <p>
+        <code>
+          createVisitor('Verena Nardi', 45, 'H32AZ123'); // => { name: 'Verena
+          Nardi', age: 45, ticketId: 'H32AZ123' }
+        </code>
+      </p>
+      <button class="miBoton" id="botHints01">
+        <span>Stuck? Reveal hints</span>
+        <img src="img/reveal_hints.svg" alt="Opens in a modal" class="c-icon" />
+      </button>
+      <div class="divHints" id="divHints01" style="display: none">
+        <h4>1. Create a new visitor: hints and tips</h4>
+        <ul>
+          <li>
+            Revisit the concept "Objects" to find out how to create an object
+            with certain keys and values.
+          </li>
+        </ul>
+      </div>
+
+      <hr />
+
+      <h1>2. Revoke the ticket</h1>
+      <p>
+        When people leave the amusement park, their ticket gets revoked. If they
+        come back, they need to buy a new one. To save regular visitors some
+        time, they only need to register once and the visitor information will
+        be kept for subsequent visits.
+      </p>
+      <p>
+        That means when a visitor leaves the park, only their ticket should be
+        invalidated but the rest of the visitor object should stay the same.
+        Implement the function <code>revokeTicket</code> that accepts a visitor
+        object, sets the ticket identifier to <code>null</code> and returns the
+        object afterwards.
+      </p>
+      <p>
+        <code>
+          const visitor = { name: 'Verena Nardi', age: 45, ticketId: 'H32AZ123',
+          }; revokeTicket(visitor); // => { name: 'Verena Nardi', age: 45,
+          ticketId: null }
+        </code>
+      </p>
+
+      <button class="miBoton" id="botHints02">
+        <span>Stuck? Reveal hints</span>
+        <img src="img/reveal_hints.svg" alt="Opens in a modal" class="c-icon" />
+      </button>
+      <div class="divHints" id="divHints02" style="display: none">
+        <h4>2. Revoke the ticket: hints and tips</h4>
+        <ul>
+          <li>
+            Use the assignment operator <code>=</code> to set the
+            <code>ticketId</code> property of the visitor object to
+            <code>null</code>.
+          </li>
+          <li>Return the visitor object afterwards.</li>
+        </ul>
+      </div>
+      <hr />
+
+      <h1>3. Determine the ticket status</h1>
+
+      <p>
+        To prevent forgery, the ticket identifiers are unique. Once a ticket is
+        printed, its identifier is added as a key in an object in the system so
+        it can be tracked.
+      </p>
+      <p>
+        Before the ticket is sold to a visitor, it is stored with the value
+        <code>null</code> in the ticket tracking object. When it is sold to a
+        visitor, the visitor's name is assigned as a value. When employees have
+        doubts about the validity of a ticket, they need to check the status of
+        the ticket in the system.
+      </p>
+      <p>
+        Implement a function <code>ticketStatus</code> that accepts the tracking
+        object and a ticket identifier as arguments. It should return one of the
+        following results.
+      </p>
+
+      <ul>
+        <li>
+          <code>'unknown ticket id'</code> if the identifier was not found in
+          the tracking object.
+        </li>
+        <li>
+          <code>'not sold'</code> in case the ticket was printed but not sold.
+        </li>
+        <li>
+          <code>'sold to {name}'</code> where <code>{name}</code> is the name of
+          the visitor if the ticket was sold
+        </li>
+      </ul>
+      <p>
+        <code>
+          const tickets = { '0H2AZ123': null, '23LA9T41': 'Verena Nardi', };
+          ticketStatus(tickets, 'RE90VAW7'); // => 'unknown ticket id'
+          ticketStatus(tickets, '0H2AZ123'); // => 'not sold'
+          ticketStatus(tickets, '23LA9T41'); // => 'sold to Verena Nardi'
+        </code>
+      </p>
+      <button class="miBoton" id="botHints03">
+        <span>Stuck? Reveal hints</span>
+        <img src="img/reveal_hints.svg" alt="Opens in a modal" class="c-icon" />
+      </button>
+      <div class="divHints" id="divHints03" style="display: none">
+        <h4>3. Determine the ticket status: hints and tips</h4>
+        <ul>
+          <li>
+            Revisit the concept "Conditionals" to find out how conditionally
+            return different values from the function.
+          </li>
+          <li>
+            Use the bracket notation to access the value of the given
+            <code>ticketId</code> in the object.
+          </li>
+          <li>
+            Use the strict equality operator <code>===</code> to check for
+            <code>null</code> or <code>undefined</code>.
+          </li>
+        </ul>
+      </div>
+      <hr />
+
+      <h1>4. Improve the ticket status response</h1>
+      <p>
+        After a while, you get feedback from the employees that they want the
+        ticket status to be easier to understand at the first glance. They only
+        want to see either the name of the visitor or that the ticket is
+        invalid.
+      </p>
+      <p>
+        Write a function <code>simpleTicketStatus</code> that accepts the same
+        arguments as <code>ticketStatus</code> in task 3. This function only
+        returns one of two different results.
+      </p>
+      <ul>
+        <li>the name of the visitor if the ticket was sold.</li>
+        <li>
+          <code>'invalid ticket !!!'</code> if the ticket was not sold yet or
+          the identifier was not found in the tracking object
+        </li>
+      </ul>
+      <p>
+        <code>
+          const tickets = { '0H2AZ123': null, '23LA9T41': 'Verena Nardi', };
+          simpleTicketStatus(tickets, '23LA9T41'); // => 'Verena Nardi'
+          simpleTicketStatus(tickets, '0H2AZ123'); // => 'invalid ticket !!!'
+          simpleTicketStatus(tickets, 'RE90VAW7'); // => 'invalid ticket !!!'
+        </code>
+      </p>
+      <button class="miBoton" id="botHints04">
+        <span>Stuck? Reveal hints</span>
+        <img src="img/reveal_hints.svg" alt="Opens in a modal" class="c-icon" />
+      </button>
+      <div class="divHints" id="divHints04" style="display: none">
+        <h4>4. Improve the ticket status response: hints and tips</h4>
+        <ul>
+          <li>
+            Retrieve the value for a given <code>ticketId</code> with bracket
+            notation like in the previous task.
+          </li>
+          <li>No if-statement is needed to solve this task.</li>
+          <li>Use the nullish coalescing operator <code>??</code> instead.</li>
+        </ul>
+      </div>
+      <hr />
+
+      <h1>5. Determine the version of terms and conditions</h1>
+      <p>
+        Due to new legal requirements, newly created visitor objects now also
+        contain detailed information on the "General Terms & Conditions" (GTC)
+        that the user agreed to. You can see an example of the new visitor
+        object below.
+      </p>
+      <p>
+        The cashiers of the amusement park now need to check whether a visitor
+        needs to sign a new version of the GTC. For this, implement a function
+        <code>gtcVersion</code> that accepts a visitor object as an argument and
+        returns the GTC version if it is available. If the version information
+        is not available, nothing should be returned.
+      </p>
+      <p>
+        <code>
+          const visitorNew = { name: 'Verena Nardi', age: 45, ticketId:
+          'H32AZ123', gtc: { signed: true, version: '2.1', }, };
+          gtcVersion(visitorNew); // => '2.1' const visitorOld = { name: 'Verena
+          Nardi', age: 45, ticketId: 'H32AZ123', }; gtcVersion(visitorOld); //
+          => undefined
+        </code>
+      </p>
+      <button class="miBoton" id="botHints05">
+        <span>Stuck? Reveal hints</span>
+        <img src="img/reveal_hints.svg" alt="Opens in a modal" class="c-icon" />
+      </button>
+      <div class="divHints" id="divHints05" style="display: none">
+        <h4>
+          5. Determine the version of terms and conditions: hints and tips
+        </h4>
+        <ul>
+          <li>
+            Revisit the concept "Objects" for how to access nested values and
+            start with writing down the expression for retrieving the version.
+          </li>
+          <li>
+            Then use the optional chaining operator to handle the case of the
+            missing gtc object.
+          </li>
+          <li>No if-statement is needed to solve this task.</li>
+        </ul>
+      </div>
+      <hr />
+    </div>
+    <script src="main.js"></script>
+    <script src="auxiliar.js"></script>
+  </body>
+</html>

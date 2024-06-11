@@ -1,0 +1,90 @@
+body{
+
+  border: 5px dashed burlywood;
+  max-width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+header {
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px groove  black;
+}
+
+nav {
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px groove  black;
+
+}
+nav button{
+    margin: 0 10px;
+
+}
+
+.texto1 img{
+  width: 100px;
+  height: 100px;
+  float: left;
+margin-left: 20px;
+margin-right: 20px;
+}
+.texto1 h2{
+  display: flex;
+  justify-content: right;
+  margin: 30px;
+  padding: 10px;
+  border: 5px dashed burlywood;
+}
+
+
+.texto2 img{
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.texto2 h2{
+  display: flex;
+  justify-content: right;
+  margin: 30px;
+  padding: 10px;
+  border: 5px dashed burlywood;
+}
+
+
+
+.texto3 img{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.texto3 h2{
+  display: flex;
+  justify-content: right;
+  margin: 30px;
+  padding: 10px;
+  border: 5px dashed burlywood;
+}
+
+
+
+
+footer {
+  margin: auto;
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  border-top: 3px groove  black;
+
+}

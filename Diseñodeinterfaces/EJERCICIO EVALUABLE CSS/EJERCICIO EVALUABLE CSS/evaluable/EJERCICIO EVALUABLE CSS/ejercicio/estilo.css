@@ -1,0 +1,77 @@
+body {
+  margin-top: 20px;
+  background-image: url(old_map.png);
+}
+
+.elcontenedor {
+  width: 960px;
+  font-family: Verdana;
+  font-size: 0.8em;
+  margin: 0 auto;
+}
+
+.cabecera {
+  font-size: 1.1em;
+  padding: 6px;
+  color: white;
+  background-color: #313844;
+  text-align: left;
+}
+.cabecera img {
+  padding: 6px;
+  float: left;
+}
+
+.menudenavegacion {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4em;
+  color: silver;
+  padding: 10px;
+  background-image: url(red015.jpg);
+}
+.contenidosimagen {
+  display: inline-block;
+  margin: 0px 100px;
+}
+.menudenavegacion ul {
+  list-style: none;
+}
+
+.menudenavegacion a {
+  text-decoration: none;
+  color: silver;
+}
+.menudenavegacion a:hover {
+  color: white;
+}
+
+.article {
+  display: inline-block;
+  height: 400px;
+  width: 240px;
+  margin: 30px;
+  text-align: center;
+  background-color: white;
+  padding: 5px 5px 22px 5px;
+  vertical-align: top;
+}
+.article h1 {
+  text-align: center;
+}
+
+.footer {
+  font-size: 0.7em;
+  background-color: #313b44;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width:940px
+}
+.footer p {
+  color: white;
+}
+.footer a {
+  color: white;
+}

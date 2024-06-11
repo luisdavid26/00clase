@@ -1,0 +1,131 @@
+@media screen and (max-width: 600px) {
+    body {
+      background-color: yellow;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: red;
+    }
+  }
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .titulo {
+    background-color: green;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .titulo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .titulo-enlaces {
+    background-color: grey;
+    display: flex;
+    justify-content: flex-start; 
+      list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .titulo-enlaces li {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .contenedorservicios article {
+    width: 580px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  .servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .servicio img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .servicio button {
+    background-color: rgb(226, 226, 226);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  
+  .productos article {
+    width: 290px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .productos img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .contactanos {
+    background-image: url('img/imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .contactanos-content h2 {
+    font-size: 3rem;
+  }
+  
+  .contactanos-content p {
+    font-size: 1.5rem; 
+  }
+  
+  
+  .pies-enlaces  {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  

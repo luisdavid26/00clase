@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes con imagenes</title>
+    <style>
+        #principal {
+            display: block;
+            width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            /* El borde ha de estar bien definido para que la propiedad funcione en todos los navegadores*/
+            /* Por ello se define la propiedad border:50px y border-style:solid*/
+            border: 50px;
+            border-style: solid;
+            border-image-source: url("./img/fo_bola_100.png");
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #principal-slice1 {
+            display: block;
+            width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            /* El borde ha de estar bien definido para que la propiedad funcione en todos los navegadores*/
+            /* Por ello se define la propiedad border:50px y border-style:solid*/
+            border: 27px;
+            border-style: solid;
+            border-image-source: url("./img/fo_pastilla_60.png");
+            border-image-slice: 27;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #principal-slice4 {
+            display: block;
+            width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            /* El borde ha de estar bien definido para que la propiedad funcione en todos los navegadores*/
+            /* Por ello se define la propiedad border:50px 80px 20px 80px y border-style:solid*/
+            border-width: 50px 80px 20px 80px;
+            border-style: solid;
+            border-image-source: url("./img/fo_ventana.png");
+            border-image-slice: 50 80 20 80;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #principal-slicefill {
+            display: block;
+            width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            /* El borde ha de estar bien definido para que la propiedad funcione en todos los navegadores*/
+            /* Por ello se define la propiedad border:50px y border-style:solid*/
+            border: 27px;
+            border-style: solid;
+            border-image-source: url("./img/fo_pastilla_60.png");
+            border-image-slice: 27 fill;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #image-repeat-stretch {
+            display: block;
+            width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            border: 40px;
+            border-style: solid;
+            border-image-source: url("./img/fo_hormigas_210.png");
+            border-image-slice: 70;
+            border-image-repeat: stretch;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: bold;}
+
+       
+         #image-repeat-repeat {
+            display: block;
+            width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            border: 40px;
+            border-style: solid;
+            border-image-source: url("./img/fo_hormigas_210.png");
+            border-image-slice: 70;
+            border-image-repeat: repeat;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: bold;} 
+
+    
+        #image-repeat-round {
+            display: block;
+            width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            border: 40px;
+            border-style: solid;
+            border-image-source: url("./img/fo_hormigas_210.png");
+            border-image-slice: 70;
+            border-image-repeat: round;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: bold;}
+
+    </style>
+</head>
+<body>
+    <h1>Propiedad border-image-source</h1>
+    <p>Esta propiedad establece que se puede utilizar una imagen del borde. El elemento
+        tiene que tener definido un borde y la imagen se amplía o reduce para mostrarse completa
+        en función del ancho que hayamos puesto a la propiedad <em>border</em>
+    </p>
+    <div id="principal">ESTE TEXTO TIENE UNA IMAGEN EN EL BORDE</div>
+    <br>
+    <h1>Propiedad border-image-slice</h1>
+    <p>Esta propiedad permite trocear la imagen del borde, de manera que cada trozo
+        se coloque en un lado del borde.
+        Los posibles valores de la propiedad <em>border-image-slice</em> son:
+        <ul>
+            <li>De uno a cuatro valores en píxeles. Estos valores indican a qué
+                distancia de los bordes se recorta la imagen, como muestra la figura:
+                <img src="./img/valorescorteimagenborde.png" width="300px"><br> Cada uno de los 
+                ocho trozos (descartando el trozo central) se utiliza en cada una de las ocho zonas
+                correspondientes al borde. Al igual que en otras propiedades como <em>margin</em> o <em>padding</em> 
+                , podemos indicar sólo dos valores, o incluso, un único valor.
+            </li>
+        </ul>
+    </p>
+    <p>Si a la propiedad le asignamos un solo valor el borde queda como:
+        <div id="principal-slice1">ESTE TEXTO TIENE UNA IMAGEN EN EL BORDE</div>
+    </p>
+
+    <p>Si a la propiedad le asignamos cuatro valores el borde queda como:
+        <div id="principal-slice4">ESTE TEXTO TIENE UNA IMAGEN EN EL BORDE</div>
+    </p>
+
+    <p>Si a la propiedad le asignamos un valor numérico y un valor denominado <em>fill</em> el borde queda como:
+        <div id="principal-slicefill">ESTE TEXTO TIENE UNA IMAGEN EN EL BORDE</div>
+        El valor <em>fill</em> hace que la parte central de la imagen se utilice para rellenar
+        el elemento.
+    </p>
+
+    <h1>Propiedad border-image-repeat</h1>
+
+    <p>Esta propiedad indica de qué forma se realiza el relleno de los bordes del elemento:
+        Los posibles valores son:
+        <ul>
+            <li><strong>strech</strong>: la imagen se estira o encoge para ocupar todo el espacio necesario.
+            <div id="image-repeat-stretch">ESTE TEXTO TIENE UNA IMAGEN EN EL BORDE</div>
+            </li>
+            <li><strong>repeat</strong>: la imagen se repite para ocupar todo el espacio necesario.
+                <div id="image-repeat-repeat">ESTE TEXTO TIENE UNA IMAGEN EN EL BORDE</div>
+            </li>
+            <li><strong>round</strong>: la imagen se repite el máximo número entero de veces posible hasta
+                rellenar el espacio, la imagen será reescalada para que ninguna de las repeticiones quede cortada.
+                <div id="image-repeat-round">ESTE TEXTO TIENE UNA IMAGEN EN EL BORDE</div>
+            </li>
+        </ul>
+    </p>
+</body>
+</html>

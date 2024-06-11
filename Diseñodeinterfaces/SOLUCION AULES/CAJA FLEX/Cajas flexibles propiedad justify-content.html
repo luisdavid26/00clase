@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Propiedad justify-content</title>
+    <style>
+    p{font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;}
+    h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    li { font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+/* Propiedad justify-content: start*/
+
+    .contenedor {display: flex;
+                width:600px;
+                /*align-items: center;*/
+                justify-content: flex-start;
+                border: 2px solid black; 
+                background-color: cornsilk;             }   
+    #caja1{
+        width: 100px;
+        height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+    }
+   
+    #caja2{
+        width: 100px;
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+    }
+
+    #caja3{
+        width: 100px;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+    }
+
+    #caja4{
+        width: 100px;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+    }
+
+  /* Propiedad justify-content:flex-end;*/
+  
+  .contenedor-end {display: flex;
+                width:600px;
+                justify-content: flex-end;
+                border: 2px solid black; 
+                background-color: cornsilk;}
+    
+    /* Propiedad justify-content:center;*/
+  
+  .contenedor-center {display: flex;
+                width:600px;
+                justify-content: center;
+                border: 2px solid black; 
+                background-color: cornsilk};
+
+  /* Propiedad justify-content:space-between;*/
+  
+  .contenedor-space-between {
+                display: flex;
+                width:600px;
+                justify-content: space-between;
+                border: 2px solid black; 
+                background-color: cornsilk};               
+                
+    
+/* Propiedad justify-content:space-around;*/
+  
+.contenedor-space-around {
+                display: flex;
+                width:600px;
+                justify-content: space-around;
+                border: 2px solid black; 
+                background-color: cornsilk};               
+                
+
+    </style>
+</head>
+<body>
+    <h1>Propiedad justify-content</h1>
+    <p>El Modelo de las cajas flexible posee capacidad para desplegar espacio libre.
+        Cuando el tamaño total de los elementos hijos no llena por completo la caja contenedora, 
+        queda un espacio libre que tiene que ser ubicado en algún lugar dentro del diseño.
+    </p>
+    <p> Si el valor de la propiedad queda <em>justify-content:flex-start</em> el espacio sobrante se queda
+    al final de caja contenedora. Este es el valor por defecto</p>
+    <div class="contenedor">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+    <p> Si el valor de la propiedad queda <em>justify-content:flex-end</em> el espacio sobrante se queda
+        al principio de caja contenedora.</p>
+        <div class="contenedor-end">
+            <div id="caja1"></div>
+            <div id="caja2"></div>
+            <div id="caja3"></div>
+            <div id="caja4"></div>
+        </div>
+    <p> Si el valor de la propiedad queda <em>justify-content:center</em> el espacio sobrante se queda
+        en los borde de tal forma que la caja contenedora se queda en el centro.</p>
+        <div class="contenedor-center">
+            <div id="caja1"></div>
+            <div id="caja2"></div>
+            <div id="caja3"></div>
+            <div id="caja4"></div>
+        </div> 
+        
+    <p> Si el valor de la propiedad queda <em>justify-content:space-between</em> el espacio sobrante se queda
+            entre las distintas cajas.</p>
+            <div class="contenedor-space-between">
+                <div id="caja1"></div>
+                <div id="caja2"></div>
+                <div id="caja3"></div>
+                <div id="caja4"></div>
+            </div> 
+
+            <p> Si el valor de la propiedad queda <em>justify-content:space-around</em> el espacio sobrante se coloca entre las cajas 
+        pero alrededor de ellas.</p>
+                <div class="contenedor-space-around">
+                    <div id="caja1"></div>
+                    <div id="caja2"></div>
+                    <div id="caja3"></div>
+                    <div id="caja4"></div>
+                </div> 
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Propiedad align-content</title>
+    <style>
+    p{font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;}
+    h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    li { font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+/* Propiedad align-content:center*/
+
+    #contenedor-align-center {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            width:600px;
+            height: 250px;
+            border: 2px solid black; 
+            background-color: cornsilk;}   
+    #caja1{
+        flex:1 1 100px;
+        height: 100px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+       
+    }
+   
+    #caja2{
+        flex:1 1 100px;
+        height: 100px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        
+    }
+
+    #caja3{
+        flex:1 1 100px;
+        height: 100px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        
+    }
+
+    #caja4{
+        flex:1 1 400px;
+        height: 100px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+      
+    }
+/* Propiedad align-content:stretch*/
+#contenedor-content-stretch {display: flex;
+                flex-wrap: wrap;
+                align-content: stretch;
+                width:600px;
+                height: 250px;
+                border: 2px solid black; 
+                background-color: cornsilk;}
+
+        
+/* Propiedad align-content:flex-start*/
+#contenedor-flex-start {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start ;
+            width:600px;
+            align-items: flex-start;
+            height: 250px;
+            border: 2px solid black; 
+            background-color: cornsilk;}
+
+/* Propiedad align-content:flex-end*/ 
+ #contenedor-flex-end {display: flex;
+                flex-wrap: wrap;
+                align-content: flex-end;
+                width:600px;
+                align-items: flex-end;
+                height: 200px;
+                border: 2px solid black; 
+                background-color: cornsilk;} 
+
+/* Propiedad align-contente:baseline*/ 
+#contenedor-baseline {display: flex;
+                flex-wrap: wrap;
+                align-content: baseline;
+                width:600px;
+                align-items: baseline;
+                height: 200px;
+                border: 2px solid black; 
+                background-color: cornsilk;} 
+
+/* Propiedad align-contente:space-between*/ 
+#contenedor-space-between {display: flex;
+                flex-wrap: wrap;
+                align-content: space-between;
+                width:600px;
+                align-items: baseline;
+                height: 250px;
+                border: 2px solid black; 
+                background-color: cornsilk;} 
+
+/* Propiedad align-contente:space-around*/ 
+#contenedor-space-around {display: flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+                width:600px;
+                align-items: baseline;
+                height: 250px;
+                border: 2px solid black; 
+                background-color: cornsilk;} 
+    
+    </style>
+</head>
+<body>
+    <h1>Propiedad align-content</h1>
+    <p>Cuando trabajamos con contenedores flexibles de líneas múltiples, existe la posibilidad de que necesitemos alinearlas. La propiedad<strong>align-items</strong> 
+        alinea las cajas en el eje transversal pero para contenedores de líneas múltiples. La propiedad <strong>align-content</strong> se asemeja a la 
+        propiedad <strong>align-items</strong>.
+    </p>
+    <p>Para que las líneas sean alineadas, tiene que haber espacio libre disponible.</p>
+   <h3>Propiedad align-items:center</h3>
+
+      <div id="contenedor-align-center">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    <h3>Propiedad align-content:stretch</h3>
+    <p> Este valor es declarado por defecto. Este valor expande las líneas 
+        para cubrir el espacio disponible, a menos que un valor fijo haya sido 
+        declarado para los elementos.</p>
+
+    <div id="contenedor-content-stretch">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    <h3>Propiedad align-content:flex-start</h3>
+    <p>Esta propiedad alinea las cajas al comienzo de la línea. lo cual
+        determina la alineación de los contendores de izquierda a derecha.
+    </p>
+
+    <div id="contenedor-flex-start">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    <h3>Propiedad align-content:flex-end</h3>
+    <p>Esta propiedad alinea las cajas al final del contenedor.
+    </p>
+
+    <div id="contenedor-flex-end">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    <h3>Propiedad align-content:baseline</h3>
+    <p>Esta propiedad alinea las cajas por la línea de base de la primera
+        línea del contenido de todas las cajas.
+    </p>
+
+    <div id="contenedor-baseline">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    <h3>Propiedad align-content:space-between</h3>
+
+    <div id="contenedor-space-between">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    <h3>Propiedad align-content:space-around</h3>
+
+    <div id="contenedor-space-around">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+</body>
+</html>

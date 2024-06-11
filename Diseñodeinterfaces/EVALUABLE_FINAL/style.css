@@ -1,0 +1,132 @@
+body {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between; /* Alinea los elementos verticalmente con espacio entre ellos */
+  background-color: rgb(255, 212, 182); /* Color de fondo por defecto */
+}
+
+@media screen and (max-width: 767px) {
+  /* Estilos para pantallas pequeñas */
+  .col-md-6 {
+    order: 2; /* Cambiar el orden de las columnas */
+    margin-top: 20px; /* Espacio entre el texto y el carrusel */
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Establecer altura mínima de la ventana */
+  }
+  .container-fluid {
+    flex-grow: 1; /* Hacer que el contenido crezca para ocupar el espacio restante */
+  }
+  .carousel-item img {
+    /* Establece una altura fija para las imágenes del carrusel */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin distorsión */
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos para pantallas medianas */
+  .col-md-6 {
+    height: 100%; /* Establecer altura máxima */
+  }
+  .carousel-item img {
+    /* Establece una altura fija para las imágenes del carrusel */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin distorsión */
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Estilos para pantallas grandes */
+  .col-md-6 {
+    height: auto; /* Restaurar altura automática */
+  }
+  .carousel-item img {
+    /* Establece una altura fija para las imágenes del carrusel */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor sin distorsión */
+  }
+  .menu_desplegable {
+    max-width: 400px; /* Establece un ancho máximo para el menú desplegable */
+    margin-left: auto; /* Centra el menú horizontalmente en pantallas grandes */
+    margin-right: auto; /* Centra el menú horizontalmente en pantallas grandes */
+  }
+}
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+}
+
+.menu_desplegable {
+  margin-bottom: 5%;
+}
+.navbar-nav .nav-link {
+  color: #333; /* Color de texto */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #85bc77; /* Cambio de color al pasar el mouse */
+}
+
+.navbar-toggler {
+  background-color: #a0ccf9; /* Color de fondo del botón de hamburguesa */
+}
+
+/* Estilos para el menú desplegado */
+.navbar-collapse {
+  background-color: #a0ccf958; /* Color de fondo del menú desplegado */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #a0ccf9; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para los botones en el menú desplegable */
+.navbar-nav .btn {
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  padding: 0; /* Sin relleno */
+  margin: 0; /* Sin margen */
+}
+
+.navbar-nav .btn:hover {
+  background-color: transparent; /* Mantener fondo transparente al pasar el mouse */
+  color: #7495b6; /* Cambio de color al pasar el mouse */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px; /* Establece el ancho deseado para los botones del carrusel */
+  height: 40px; /* Establece la altura deseada para los botones del carrusel */
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  margin: 0 10px; /* Margen entre los botones */
+}
+
+
+.card {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.productos {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer {
+  margin-top: 5%;
+  background-color: grey;
+  padding: 10px;
+  text-align: center; /* Alinea el texto al centro */
+}

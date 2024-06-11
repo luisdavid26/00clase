@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar video</title>
+</head>
+<body>
+    <h1>INSERTAR VIDEO EN HTML5</h1>
+    <p>HTML5 posee la propiedad de insertar y reproducir videos en un documento HTML</p>
+    <h2>SINTAXIS DE LA ETIQUETA VIDEO </h2>
+    <p>Se utiliza la etiqueta video con los siguientes atributos:
+        <ul>
+            <li>width y height: establece las dimensiones de la ventana del reproductor</li>
+            <li>src: dirección en la que está guardado el video.<br>
+            Este atributo puede ser sustituido por el elemento <source> y su atributo <source>
+            para declarar varias fuentes con diferentes formatos. Ver código de la etiqueta más abajo</li>
+            <li>controls: muestra los controles del vídeo provisto por el navegador. Permite al usuario
+                comenzar a reproducir el vídeo, pausarlo o saltar hacia un cuadro específico, entre otras
+                funciones.
+            </li>
+            <li>loop: el navegador reproduce el vídeo nuevamente cuando llega al final de forma automática.</li>
+            <li>poster: se utiliza para proveer una imagen que será mostrada mientras esperamos
+                que el vídeo comience a ser reproducido.
+            </li>
+            <li>preload: atributo que admite tres valores:
+                <ul>
+                    <li>none: indica que el vídeo se reproduce directamente sin guardarse en la memoria caché </li>
+                    <li>metadata: recomienda al navegador capturar información acerca de la fuente, como: dimensiones,
+                        duración, primer cuadro, etc,
+                    </li>
+                    <li>auto: valor por defecto e indica al navegador descargar el archivo tan pronto como sea posible.</li>
+                </ul>
+            </li>  
+        </ul>
+    </p>
+
+    <p>Los formatos de video que acepta HTML5 son .mp4, .ogg y .webm.</p>
+    <h2>Video inscrustado con atributos básicos</h2>
+    <video id="invierno"  controls width="720" height="400">
+        <source src="./VIDEOS/video.mp4">
+        <source src="./VIDEOS/video.ogg">(en caso de que existan otros formatos)
+    </video>
+
+    <h2>Video inscrustado con otros parámetros, como por ejemplo, poster </h2>
+    <video id="nieve" controls preload loop width="720" height="400" poster="./imagenes/poster.jpg">
+        <source src="./VIDEOS/video.mp4">
+        <source src="./VIDEOS/video.ogg">(en caso de que existan otros formatos)
+    </video>
+</body>
+</html>

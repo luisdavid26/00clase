@@ -1,0 +1,16 @@
+.bloque {display:inline-block;}
+
+#martillo {
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+    /* Se aplica la propiedad background-color como si estuviera cambiada*/
+    transition:background-color 1s esase-in-out 0.5s;
+}
+
+/* Al pasar el ratón por encima del martillo se vuelve negro*/
+#martillo:hover {background-color: black;}

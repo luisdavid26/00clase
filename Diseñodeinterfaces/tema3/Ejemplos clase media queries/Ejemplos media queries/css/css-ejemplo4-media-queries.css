@@ -1,0 +1,22 @@
+div{
+    height: 500px;
+}
+
+@media (min-aspect-ratio: 8/5) {
+    div {
+        background-color: #9af;
+        }
+    }
+
+@media (max-aspect-ratio: 3/2) {
+    div{
+        background-color: #9ff;
+    }
+}
+
+@media (aspect-ratio:1/1) {
+    div{
+        background-color: #f9a;
+    }
+}
+

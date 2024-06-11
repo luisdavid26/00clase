@@ -1,0 +1,78 @@
+body {
+  max-width: 960px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  color: brown;
+  text-align: center;
+  text-shadow: 2px 2px rgb(254, 120, 3);
+  padding: 10px;
+}
+
+.texto1 {
+  display: flex;
+  background-color: bisque;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.texto1 img {
+  width: 150px;
+  height: 100px;
+  order: 2; /* Change the order to 2 to move the image to the right */
+  border: 2px solid rgb(205, 2, 2);
+}
+
+.texto1 h2 {
+  display: flex;
+  order: 1; /* Change the order to 1 to move the text to the left */
+  padding: 20px;
+}
+
+.texto2{
+  border: 2px dotted rgb(202, 2, 205);
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  text-align: left;
+}
+.texto2 img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(202, 2, 205);
+}
+.texto2 h2 {
+  display: flex;
+  margin: 30px;
+  padding: 10px;
+}
+
+.texto1 h2 {
+  display: flex;
+  padding: 20px;
+}
+.texto2{
+  border: 5px dotted rgb(202, 2, 205);
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  text-align: left;
+}
+.texto2 img {
+  width: 150px;
+  height: 100px;
+  float: left;
+  margin: 20px;
+  border: 2px solid rgb(202, 2, 205);
+}
+.texto2 h2 {
+  display: flex;
+  margin: 30px;
+  padding: 10px;
+}

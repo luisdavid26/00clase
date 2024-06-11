@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Propiedad order</title>
+    <style>
+    p{font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;}
+    h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    li { font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+/* Propiedad order*/
+
+    .contenedor {display: flex;
+                width:600px;
+                border: 2px solid black;              }   
+    #caja1{
+        flex:1;
+        order: 2;
+        height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        font-size: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin:5px;
+    }
+   
+    #caja2{
+        flex:1;
+        order: 4;
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        font-size: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin:5px;
+    }
+
+    #caja3{
+        flex:1;
+        order: 3;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        font-size: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin:5px;
+    }
+
+    #caja4{
+        flex:1;
+        order: 1;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        font-size: 20px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin:5px;
+    }
+
+   
+    </style>
+</head>
+<body>
+    <h1>Propiedad order</h1>
+    <p>Permite personalizar el orden de las cajas</p>
+    <div class="contenedor">
+        <div id="caja1">1</div>
+        <div id="caja2">2</div>
+        <div id="caja3">3</div>
+        <div id="caja4">4</div>
+    </div>
+    <p>La propiedad order modifica el orden de las etiquetas al ser escritas.</p>
+</body>
+</html>

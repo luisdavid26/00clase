@@ -1,0 +1,23 @@
+body {
+     margin: 0px;
+     padding: 0px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#exchange {
+     justify-content: center;
+     align-items: center;
+     background-color: burlywood;
+     display: flex;
+     place-items: center;
+     flex-direction: column;
+}
+#exchange img {
+     width: 200px;
+}
+
+span{
+     font-weight: bolder;
+}
+#divisas{
+     background-color: aquamarine;
+}

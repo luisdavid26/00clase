@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SOMBRAS</title>
+    <style>
+        body {text-align:justify;}
+        h2 {text-align: center;}
+
+        #sombra-izquierda{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            box-shadow: 5px 5px rgb(150, 150, 150);
+            -webkit-box-shadow: 5px 5px rgb(150, 150, 150);
+            -moz-box-shadow: 5px 5px rgb(150, 150, 150);
+        }
+
+        #sombra-derecha{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            box-shadow: -5px -5px rgb(250, 197, 197);
+            -webkit-box-shadow: -5px -5px rgb(250, 197, 197);
+            -moz-box-shadow: -5px -5px rgb(250, 197, 197);
+        }
+
+        #sombra-izquierda-difuminada{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            box-shadow: 5px 5px 10px rgb(150, 150, 150);
+            -webkit-box-shadow: 5px 5px 10px rgb(150, 150, 150);
+            -moz-box-shadow: 5px 5px 10px rgb(150, 150, 150);
+        }
+
+        #sombra-derecha-difuminada{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            box-shadow: -5px -5px 10px rgb(250, 197, 197);
+            -webkit-box-shadow: -5px -5px 10px rgb(250, 197, 197);
+            -moz-box-shadow: -5px -5px 10px rgb(250, 197, 197);
+        }
+
+        #sombra-izquierda-todasdirecciones{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            box-shadow: 5px 5px 10px 10px rgb(150, 150, 150);
+            -webkit-box-shadow: 5px 5px 10px 10px rgb(150, 150, 150);
+            -moz-box-shadow: 5px 5px 10px 10px rgb(150, 150, 150);
+        }
+
+        #sombra-derecha-todasdirecciones{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            box-shadow: -5px -5px 10px 10px rgb(250, 197, 197);
+            -webkit-box-shadow: -5px -5px 10px 10px rgb(250, 197, 197);
+            -moz-box-shadow: -5px -5px 10px 10px rgb(250, 197, 197);
+        }
+        #sombra-izquierda-profundidad{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            box-shadow: 5px 5px 10px 10px rgb(150, 150, 150) inset;
+            -webkit-box-shadow: 5px 5px 10px 10px rgb(150, 150, 150) inset;
+            -moz-box-shadow: 5px 5px 10px 10px rgb(150, 150, 150) inset;
+        }
+
+        #sombra-derecha-profundidad{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+            box-shadow: -5px -5px 10px 10px rgb(250, 197, 197) inset;
+            -webkit-box-shadow: -5px -5px 10px 10px rgb(250, 197, 197) inset;
+            -moz-box-shadow: -5px -5px 10px 10px rgb(250, 197, 197) inset;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>PROPIEDAD box-shadow</h2>
+    <p> Con la propiedad <strong>box-shadow </strong>generamos sombras. Necesitamos tres valores:
+        <ul>
+            <li>Los dos primeros valores, expresado en píxeles, establecen el 
+                desplazamiento de la sombra
+            </li>
+            <li>El tercero indica el color de la misma</li>
+        </ul>
+    <p>El desplazamiento puede ser positivo o negativo. Los valores indican, respectivamente, la distancia
+        horizontal y vertical desde la sombra al elemento. Valores negativos posicionan la 
+        sombra a la izquierda y arriba del elemento, mientras que valores positivos crean
+        la sombra a la derecha y debajo del elemento. 
+    </p>
+    </p>
+    <header id="sombra-izquierda">
+        <h1>PROPIEDAD CSS box-shadow</h1>
+    </header>
+
+    <header id="sombra-derecha">
+        <h1>PROPIEDAD CSS box-shadow</h1>
+    </header>
+
+   <p>Para que la sombra tenga gradientes o transparencias, se añade un valor antes
+    del color que indica la distancia de difuminación </p>
+    
+    <header id="sombra-izquierda-difuminada">
+        <h1>PROPIEDAD CSS box-shadow</h1>
+    </header>
+
+    <header id="sombra-derecha-difuminada">
+        <h1>PROPIEDAD CSS box-shadow</h1>
+    </header>
+
+    <p>Si añadimos otro valor antes del color el tamaño de la sombra aumenta
+        en todas las direcciones
+    </p>
+
+    <header id="sombra-izquierda-todasdirecciones">
+        <h1>PROPIEDAD CSS box-shadow</h1>
+    </header>
+
+    <header id="sombra-derecha-todasdirecciones">
+        <h1>PROPIEDAD CSS box-shadow</h1>
+    </header>
+    <p>Si ponemos la palabra clave <strong>inset </strong> después del color, la sombra
+        externa pasa a ser interna y se provoca de este modo un efecto de profundidad. </p>
+
+    <header id="sombra-izquierda-profundidad">
+        <h1>PROPIEDAD CSS box-shadow</h1>
+    </header>
+    
+    <header id="sombra-derecha-profundidad">
+        <h1>PROPIEDAD CSS box-shadow</h1>
+    </header>
+</body>
+</html>

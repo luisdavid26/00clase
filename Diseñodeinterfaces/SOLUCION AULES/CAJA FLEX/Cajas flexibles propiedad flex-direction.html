@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Propiedad flex-direction</title>
+    <style>
+    p{font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;}
+    h3{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    li { font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+/* Propiedad flex-direction:row*/
+
+    .contenedor-row{display: flex;
+                flex-direction: row;
+                width:600px;
+                border: 2px solid black;              }   
+    #caja1{
+        flex:1;
+        height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+    #caja2{
+        flex:1;
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        margin:5px;
+    }
+
+    #caja3{
+        flex:1;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+    #caja4{
+        flex:1;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+
+    /* Propiedad flex-direction:row-reverse*/
+
+    .contenedor-row-reverse{
+                display: flex;
+                flex-direction: row-reverse;
+                width:600px;
+                border: 2px solid black;              }   
+    #caja1{
+        flex:1;
+        height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+    #caja2{
+        flex:1;
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        margin:5px;
+    }
+
+    #caja3{
+        flex:1;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+    #caja4{
+        flex:1;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+
+    /* Propiedad flex-direction:column*/
+
+    .contenedor-column {display: flex;
+                flex-direction: column;
+                height:600px;
+                border: 2px solid black;              }   
+    #caja1{
+        flex:1;
+        width: 100px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+    #caja2{
+        flex:1;
+        width:  100px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        margin:5px;
+    }
+
+    #caja3{
+        flex:1;
+        width: 100px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+    #caja4{
+        flex:1;
+        width: 100px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+
+    /* Propiedad flex-direction:column-reverse*/
+
+    .contenedor-column-reverse {display: flex;
+                flex-direction: column-reverse;
+                height:600px;
+                border: 2px solid black;              }   
+    #caja1{
+        flex:1;
+        width: 100px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+    #caja2{
+        flex:1;
+        width: 100px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        margin:5px;
+    }
+
+    #caja3{
+        flex:1;
+        width: 100px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+    #caja4{
+        flex:1;
+        width: 100px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1>Propiedad flex-direction</h1>
+    <p>Para personalizar el orden y orientación del contenido de un contendor flexible, tenemos que utilizar la propiedad
+         <strong>flex-direction.</strong>. Esta propiedad tiene cuatro valores posibles:</p>
+        <ul>
+            <li><strong>row</strong>: Establece la orientación de acuerdo a la orientación del texto
+                (normalamnete horizontal) y ordena las cajas de izquierda a derecha.</li>
+            <li><strong>row-reverse</strong>: Este valor establece la misma orientación que <strong>row</strong> pero
+            invierte el orde de los elementos, en este caso de derecha a izquierda.</li>
+            <li><strong>column</strong>: Este valor establece la orientación de acuerdo con la orientación en la cual los 
+            bloques de texto son desplegados, normalmente vertical, y ordena las cajas desde arriba hacia abajo.</li>
+            <li><strong>column-reverse</strong>: Este valor establece la misma orientación que <strong>column</strong>pero invierteel orden de los
+            elementos desde abajo hacia arriba</li>
+        </ul>
+    </p>
+    <h3>Propiedad flex-direction: row</h3>
+    <div class="contenedor-row">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+    <h3>Propiedad flex-direction: row-reverse</h3>
+    <div class="contenedor-row-reverse">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>r
+    <h3>Propiedad flex-direction: column</h3>
+    <div class="contenedor-column">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+    <h3>Propiedad flex-direction: column-reverse</h3>
+    <div class="contenedor-column-reverse">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    
+    
+</body>
+</html>

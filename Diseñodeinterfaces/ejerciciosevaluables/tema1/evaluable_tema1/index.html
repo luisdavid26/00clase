@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi Centro</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        background-color: rgb(243, 243, 243);
+      }
+      table{
+        margin: auto;
+      }
+
+      .cabeza {
+        text-align: center;
+        padding: 20px;
+        background-color: lightgrey;
+      }
+
+      .contenido-principal {
+        text-align: center;
+        padding: 20px;
+      }
+      .eventosnormal {
+        transition: transform 0.3s;
+      }
+
+      .eventosnormal:hover {
+        transform: scale(1.1);
+      }
+      .eventoshalloween {
+        transition: transform 0.3s;
+      }
+
+      .eventoshalloween:hover {
+        transform: scale(18.1);
+      }
+      .boton {
+        background-color: rgb(153, 153, 153);
+        transition: background-color 0.5s, color 0.5s;
+        color: black;
+        border: none;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .boton:hover {
+        background-color: rgb(100, 100, 100);
+        color: white;
+      }
+      .pie {
+        text-align: center;
+        padding: 20px;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cabeza">
+      <table style="margin: auto">
+        <tr>
+          <td style="text-align: center">
+            <a href="https://education.ec.europa.eu/es">
+              <img
+                src="unionEuropea.png"
+                alt="unionEuropea.png"
+                style="
+                  display: block;
+                  margin: auto;
+                  width: 100px;
+                  height: 50px;
+                "
+            /></a>
+          </td>
+          <td style="text-align: center">
+            <a href="https://aules.edu.gva.es/fp">
+              <img
+                src="logo_aulesnew.png"
+                alt="logo_aulesnew.png"
+                style="
+                  display: block;
+                  margin: auto;
+                  width: 100px;
+                  height: 50px;
+                "
+            /></a>
+          </td>
+        </tr>
+      </table>
+      <h1>Bienvenido al Instituto Mi Centro</h1>
+    </div>
+
+    <div class="contenido-principal">
+      <p>
+        Somos una institución comprometida con la excelencia educativa y el
+        crecimiento integral de nuestros estudiantes.
+      </p>
+      <p>
+        Explora nuestra página web para descubrir más sobre nuestras
+        instalaciones, programas y logros.
+      </p>
+      <table>
+        <h1>Eventos importantes</h1>
+        <tr>
+          <td style="text-align: center;margin-bottom: 20px;padding-right: 20px;padding-left: 20px;">
+            <a href="https://www.eltiempoentorrevieja.es/prediccion/prediccion-meteorologica-torrevieja">
+              <img src="rachasdeviento.png" alt="rachasdeviento" class="eventosnormal" style="display: block; margin: auto; width: 100px; height: 100px;" />
+            </a>
+            <h5 style="color: red">FUERTES RACHAS DE VIENTO<br />!!!!!PRECAUCIÓN!!!!!</h5>
+          </td>
+          <td style="text-align: center;margin-bottom: 20px;padding-right: 20px;padding-left: 20px;">
+            <a href="https://torrevieja.com/desfile-halloween-torrevieja-2022/">
+              <img src="halloween-ghost-wearing-witch-hat-free-png.png" alt="rachasdeviento" class="eventoshalloween" style="display: block; margin: auto; width: 100px; height: 100px;" />
+            </a>
+            <h5 style="color: rgb(255, 162, 0)">FELIZ HALLOWEEN</h5>
+          </td>
+        </tr>
+
+      </table>
+      
+    </div>
+
+    <div class="pie">
+      <table>
+        <tr>
+          <a href="estudios.html"> <button class="boton">estudios</button></a>
+        </tr>
+      </table>
+      <a href="horario.html"> <button class="boton">horario</button></a>
+      <a href="contacto.html"><button class="boton">contacto</button></a>
+      <br />
+      <a
+        href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fportal.edu.gva.es%2Fiestorrevigia%2Fcontacto%2F&linkname=CONTACTO&linknote="
+        ><img
+          src="logofacebook.png"
+          alt="logofacebook"
+          style="width: 40px; height: 40px; margin: 10px"
+      /></a>
+
+      <a
+        href="https://www.addtoany.com/add_to/twitter?linkurl=https%3A%2F%2Fportal.edu.gva.es%2Fiestorrevigia%2Fcontacto%2F&linkname=CONTACTO&linknote="
+        ><img
+          src="logotwitter.png"
+          alt="logotwitter"
+          style="width: 40px; height: 40px; margin: 10px"
+      /></a>
+    </div>
+  </body>
+</html>

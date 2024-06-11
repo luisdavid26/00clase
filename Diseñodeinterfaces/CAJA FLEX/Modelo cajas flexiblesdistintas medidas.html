@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>MODELO CAJAS FLEXIBLES</title>
+    <style>
+    p{ font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;}
+    li { font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+    .contenedor {display: flex;
+                width:600px;
+                border: 2px solid black;
+/* Todas las cajas tienen la misma anchura*/                }   
+    #caja1{
+        flex:1;
+        height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+    #caja2{
+        flex:1;
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        margin:5px;
+    }
+
+    #caja3{
+        flex:1;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+    #caja4{
+        flex:1;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+
+/* En este caso se ha modificado el valor de flex-grow de la caja 1 a 2*/
+#caja1-1{
+        flex:2;
+         height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+    #caja2-1{
+        flex:1;
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        margin:5px;
+    }
+
+    #caja3-1{
+        flex:1;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+    #caja4-1{
+        flex:1;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+    
+/* Tamaño del ancho de la caja1 es de 300px*/
+
+#caja1-2{
+        width: 300px;
+        height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+#caja2-2{
+        flex:1;
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        margin:5px;
+    }
+
+#caja3-2{
+        flex:1;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+#caja4-2{
+        flex:1;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+
+/* Los tamaños de los elementos son fijos y flexibles al mismo tiempo*/
+
+#caja1-3{
+        flex: 1 1 200px; /* El valor de flex-shrink=1 nos indica el cuánto se encoge*/
+        height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+#caja2-3{
+        flex:1 5 100px; /* El valor de flex-shrink=5 nos indica el cuánto se encoge  y el valor flex-basis=100 nos indica el ancho del contenido del elemento*/
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(0, 0, 255, 0.429);
+        margin:5px;
+    }
+
+#caja3-3{
+    
+        flex:1 5 100px;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+#caja4-3{
+        flex:1 5 100px;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+
+   /*Los tamaños de los elementos son fijos y flexibles al mismo tiempo pero el valor de flex-shrink es auto*/
+
+#caja1-4{
+        width: 200px;
+        flex: 1 1 auto;
+        height: 75px;
+        border: 2px solid red;
+        background-color: rgba(255, 0, 0, 0.37);
+        margin:5px;
+    }
+   
+#caja2-4{
+        width: 100px;
+        flex: 1 1 auto;
+        height: 75px;
+        border: 2px solid blue;
+        background-color: rgba(5, 5, 9, 0.429);
+        margin:5px;
+    }
+
+#caja3-4{
+        width: 100px;
+        flex: 1 1 auto;
+        height: 75px;
+        border: 2px solid green;
+        background-color: rgba(0, 128, 0, 0.4);
+        margin:5px;
+    }
+
+#caja4-4{
+        width: 100px;
+        flex: 1 1 auto;
+        height: 75px;
+        border: 2px solid orange;
+        background-color: rgba(255, 166, 0, 0.5);
+        margin:5px;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Propiedad Flex - distintos tamaños de cajas</h1>
+    <p>La propiedad <strong>flex</strong> declara la caja como flexible y ayuda a distribuir el espacio
+        entre las cajas.</p>
+
+    <p>Como valor, puede tomar tres posibles parámetros separados por un espacio:
+        <ul>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>fles-basis</li>
+        </ul>
+    </p>
+   <p>Si en la propiedad <strong>flex</strong> se da el valor 1 al parámetro <em>flex-grow</em>
+    la caja es declarada como flexible. Otra cualidad de este parámetro es indicar la proporción 
+    para la expansióndel elemento.
+    </p>
+
+    <p>El párametro <em>flex-shrink</em> declara la proporción para la reducción del elemento, o 
+    cuánto se va a encoger el elemento con respecto a sus hermanos.</p>
+    
+    <p>El parámetro <em>flex-shiring</em> declara la proporción para la reducción 
+    del elemento, o cuánto se va a encoger el elemento con respecto a sus hermanos.</p>
+
+    <p>El parámetro <em>flex-basis</em> indica el tamaño inicial del elemento que será considerado cuando
+    el espacio libre sea distribuido entre todos los hijos del contenedor.</p>
+    
+    <p>Las cajas flexibles serán expandidas o reducidas para llenar el espacio extra dentro
+    del elemento padre. La distribuición del espacio depende de las propiedades del resto de las 
+    cajas. Si todos los hijos son declarados como flexibles, el tamaño de cada uno dependerá del 
+    tamaño del elemento padre y del valor de la propiedad <strong>flex.</strong></p>
+    
+    <p>En este ejemplo todas las cajas tienen la misma anchur, ya que la propiedad flex es 1.
+        El tamaño de cada caja es: 600x1/4=150
+    </p>
+    
+    <div class="contenedor">
+        <div id="caja1"></div>
+        <div id="caja2"></div>
+        <div id="caja3"></div>
+        <div id="caja4"></div>
+    </div>
+
+    <p>Si modificamos el valor de flex-grow a 2, la caja roja ocupa el doble
+        de espacio que el resto de cajas.</p>
+    <p>Para calcular el tamaño de la caja1 la operación es: 600x2/5=120</p>
+        <div class="contenedor">
+            <div id="caja1-1"></div>
+            <div id="caja2-1"></div>
+            <div id="caja3-1"></div>
+            <div id="caja4-1"></div>
+        </div>
+    
+    <p>Si establecemos el tamaño fijo de 300px de ancho de la caja 1, ésta deja de ser 
+    flexible para ser fija. Se coloca la caja fija y despúes se 
+    reparte el resto del espacio entre el resto de cajas.</p>
+        <div class="contenedor">
+            <div id="caja1-2" style="text-align:center;">Tamaño fijo 300px</style></div>
+            <div id="caja2-2" style="text-align: center;">flex:1 <br>100px</div>
+            <div id="caja3-2" style="text-align:center">flex:1 <br>100px</div>
+            <div id="caja4-2" style="text-align: center;">flex:1 <br>100px</div>
+        </div>
+    
+    <p> Del mismo modo que podemos tener una caja con tamaño fijo, podemos tener varias. El principio es el mismo:
+        solo el espacio libre será distribuido entre las cajas flexibles</p>
+    
+    <p>Otro escenario posible es declarar un tamaño para el elemento pero a la vez mantenerlo flexible. 
+       Para ello, aprovechamos el resto de parámetros disponibles de la propiedad<strong> flex (flex-shrink y flex-basis)</strong>
+    </p>
+    <div class="contenedor">
+        <div id="caja1-3" style="text-align:center;"></style></div>
+        <div id="caja2-3" style="text-align: center;"></div>
+        <div id="caja3-3" style="text-align:center"></div>
+        <div id="caja4-3" style="text-align: center;"></div>
+    </div>
+    <p>En este caso se declaran los tres parámetros para la propiedead <strong>flex</strong>de cada caja.
+    Todas las cajas tienen el vlaor 1 para el párametro <strong>flex-grow</strong> , declarando así la misma proporción de expansión.
+    </p><br>
+    <p>El párametro <strong>flex-shirink</strong> determina el valor de proporcioón por medio del cual las cajas serán encogidas para 
+    entrar dentro del espacio disponible.</p><br>
+    <p>El párametro <strong>flex-basis</strong> establece un valor inicial para el ancho del elemento. Para calcular los valores de reducción 
+        o expansiónde los elementos felexibles, el valor del parámetro <strong>fles-basis</strong> es considerado. Cuanod este valor es 0 o no es 
+    declarado, el valor tomado en cuenta es el tamaño del contenido del elemento. También podemos usar la palabra clave <strong>auto</strong>
+     para dejar que el navegador utilice el valor de la propiedad <strong>width</strong>como referencia.</p>
+    <div class="contenedor">
+        <div id="caja1-4" style="text-align:center;">width=200px Real=225px</style></div>
+        <div id="caja2-4" style="text-align: center;">width=100px Real=125px</div>
+        <div id="caja3-4" style="text-align:center">width=100px Real=125px</div>
+        <div id="caja4-4" style="text-align: center;">width=100px Real=125px</div>
+    </div>
+    <p>Al posicionar todas las cajas queda un espacio libre de 100px que será divido
+        entre las cajas flexibles.
+    </p>
+    
+</body>
+</html>

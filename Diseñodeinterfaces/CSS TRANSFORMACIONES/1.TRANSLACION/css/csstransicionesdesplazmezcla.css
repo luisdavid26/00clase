@@ -1,0 +1,29 @@
+.bloque{
+    display:inline-block;
+}
+
+#martillo {
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+}
+
+
+
+/*Desplazamiento hacia arriba y abajo al mismo tiempo*/
+#martillo-mezcla {
+    position:relative;
+    background-color: rosybrown;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;
+    transform:translate(300px,-50px);
+}
+

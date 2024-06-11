@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSPARENCIAS</title>
+    <style>
+        body {text-align:justify;}
+        h2 {text-align: center;
+        color:green;}
+
+        h3 { font: bold  14px;}
+
+        #izquierda{
+            float:left;
+        }
+
+        #titulo{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 36px verdana, sans-serif;
+            border-radius: 20px;
+            background: radial-gradient(circle, #ffffff 0%, #006699 200%);
+            background:-webkit-radial-gradient(circle, #ffffff 0%, #006699 200%);
+            background:-moz-radial-gradient(circle, #ffffff 0%, #006699 200%);
+            text-shadow: 5px 5px 5px rgba(0,0,0,0.5);        }
+
+       
+        #titulo-hsla{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 36px verdana, sans-serif;
+            border-radius: 20px;
+            background: radial-gradient(circle, #ffffff 0%, #006699 200%);
+            background:-webkit-radial-gradient(circle, #ffffff 0%, #006699 200%);
+            background:-moz-radial-gradient(circle, #ffffff 0%, #006699 200%);
+            text-shadow: 5px 5px 5px rgba(0,0,0,0.5);  
+            color: hsla(120, 100%, 50%, 0.5);
+              }
+        
+    </style>
+
+</head>
+<body>
+    <h2>TRANSPARENCIAS</h2>
+    <h3>RGBA</h3>
+    <p>Para aplicar transparencias en CSS se declara una nueva función para indicar el control
+        llamada <strong>rgba()</strong>.
+<p>La función <strong>rgba()</strong> tiene cuatro atributos. Los tres primeros declaran el valor para 
+    colores rojo, verde y azul en números decimales del 0 al 255. El último valor corresponde con 
+    un valor de opacidad, siendo 0 totalmente  transparente y 1 totalmente opaco.</p><br>
+<p>Al agregar la opacidad a la sombra del texto se crea un efecto más natural</p>
+   
+    <header id="titulo">
+        <h1>TRANSPARENCIAS </h1>
+    </header>
+
+<h3>HSLA</h3>   
+<p>La función <strong>hsla()</strong> es, otra función para generar colores que, en lugar de 
+utilizar distintos valores para los colores rojo, verde y azul, utiliza distintos valoresde tono, saturación y lumninosidad.
+La sintaxis es la siguiente: <strong>hsla (tono, saturación, luminosidad, opacidad)</strong></p> 
+
+<div>
+    <img id="izquierda" src="./img/HSLcolor.png" alt="color hsla" width="350px">
+    <p>La sintaxis es la siguiente: <strong>hsla (tono, saturación, luminosidad, opacidad)</strong>
+        <ul>
+            <li><strong>Tono</strong> representa el color extraido de un círculo de color imaginario 
+            y es expresado en grados desde 0 a 36. Cerca de 0 y 360 estánlos colores rojos, cerca 
+            de 120 los verdes y cerca de 240 los azules.</li>
+            <li><strong>Saturación</strong> es representado en porcentaje, desde 0% (escala de grises) 
+            a 100% (todo color o completamente saturado)</li>
+            <li><strong>Luminosidad</strong> es también un valor en porcentaje desde 0% (completamente oscuro) 
+             a 100% (completamente iluminado). El valor 50% representa luminosidad normal o promedio</li>
+        </ul>
+    </p>   
+</div> 
+
+<header id="titulo-hsla">
+    <h1>COLOR TEXTO HSLA </h1>
+</header>
+
+
+</body>
+</html>

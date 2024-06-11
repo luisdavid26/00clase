@@ -1,0 +1,25 @@
+.bloque{
+    display:inline-block;
+}
+
+#martillo {
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+}
+
+/* Deslazamiento hacia abajo*/
+#martillo-abajo {
+    background-color: rosybrown;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;
+    transform:translate(0,50px);
+}
+

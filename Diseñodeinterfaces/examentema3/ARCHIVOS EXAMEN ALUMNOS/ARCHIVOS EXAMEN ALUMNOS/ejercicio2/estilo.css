@@ -1,0 +1,102 @@
+body {
+  max-width: 1500px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+nav button {
+  color: purple;
+  background-color: beige;
+  width: 160px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 15px;
+  
+}
+nav button:hover {
+  color: aqua;
+}
+nav a{
+  justify-content: center;
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 20px;
+  max-width: 500px;
+  background-color: orange;
+  box-shadow: 8px 5px 5px rgb(255, 0, 0);
+  font-family: "Play-Bold", sans-serif;
+
+}
+
+.texto1,
+.texto2,
+.texto3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.texto1 h2,
+.texto2 h2,
+.texto3 h2 {
+  margin: 30px;
+  padding: 10px;
+}
+@font-face {
+  font-family: "Play-Bold";
+  src: url("fuentes/Play-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Play-Regular";
+  src: url("fuentes/Play-Regular.ttf") format("truetype");
+}
+
+.texto1 p,
+.texto2 p,
+.texto3 p {
+  font-family: "Play-Regular", sans-serif;
+}
+
+img {
+  padding-top: 50px;
+  width: 150px;
+  height: 150px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+}

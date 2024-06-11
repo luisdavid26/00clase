@@ -1,0 +1,110 @@
+@media screen and (max-width: 600px) {
+    body {
+      background-color: yellow;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: rgb(255, 212, 182);
+    }
+  }
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .titulo {
+    background-color: rgb(70, 155, 164);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .titulo img {
+    width: 10%;
+    height:auto;
+  }
+  .container li button{
+    background-color: aquamarine;
+    margin-right:1rem;
+  }
+ #boton{
+   color: red;
+ }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .contenedorservicios article {
+    width: 48%;
+    margin-bottom: 2%;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+
+ .card{
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+
+  justify-content: space-between;
+  width: 50%;
+ }
+.card a{
+  background-color: rgb(201, 72, 72);
+  cursor: pointer;
+  font-size:small;
+}
+
+  .productos {
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 10%;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+  .contactanos {
+    background-image: url('img/imagen.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .contactanos-content h2 {
+    font-size: 3rem;
+  }
+  
+  .contactanos-content p {
+    font-size: 1.5rem; 
+  }
+  
+  
+  .pies-enlaces  {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  

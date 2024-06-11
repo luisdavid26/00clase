@@ -1,0 +1,68 @@
+.contenedor{
+background-color: rgb(183, 183, 183);
+position: relative;
+width: 500px;
+height: 300px;
+margin: 50px auto; /* Centra el contenedor en el medio de la pantalla, ajusta según sea necesario */
+border: 1px solid #000;
+}
+.cajaroja{
+  position: absolute;
+
+  top: 0;
+  left: 0;
+background-color: red;
+margin: 10px;
+padding: 10px;
+width: 100px;;
+height: 100px;
+}
+
+.cajaamarilla{
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  background-color: yellow;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;;
+  height: 100px;
+  }
+  
+.cajaverde{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;;
+  height: 100px;
+  }
+  
+.cajaazul{
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;;
+  height: 100px;
+  }
+.numero{
+  font-size: 1.5em;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+

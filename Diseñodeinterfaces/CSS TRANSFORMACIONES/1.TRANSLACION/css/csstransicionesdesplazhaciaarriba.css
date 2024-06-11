@@ -1,0 +1,28 @@
+.bloque{
+    display:inline-block;
+}
+
+#martillo {
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+}
+
+
+/*Desplazamiento hacia arriba*/
+#martillo-arriba {
+    background-color: rosybrown;
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;
+    transform:translate(0,-50px);
+}
+

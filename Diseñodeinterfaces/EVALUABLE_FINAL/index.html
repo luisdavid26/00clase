@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>FINAL</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <img class="logo" src="img/pngwing.com.png" alt="logo" />
+      </div>
+      <div class="row">
+        <div class="menu_desplegable">
+          <nav class="navbar navbar-expand-lg">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              id="boton"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <div class="col">
+                  <li class="nav-item active">
+                    <button type="button" class="btn btn-secondary">
+                      <a class="nav-link" href="index.html"
+                        >Inicio <span class="sr-only"></span
+                      ></a>
+                    </button>
+                  </li>
+                </div>
+                <div class="col">
+                  <li class="nav-item active">
+                    <button type="button" class="btn btn-secondary">
+                      <a class="nav-link" href="menu.html"
+                        >Menu <span class="sr-only"></span
+                      ></a>
+                    </button>
+                  </li>
+                </div>
+                <div class="col">
+                  <li class="nav-item active">
+                    <button type="button" class="btn btn-secondary">
+                      <a class="nav-link" href="reservas.html"
+                        >Reservar<span class="sr-only"></span
+                      ></a>
+                    </button>
+                  </li>
+                </div>
+                <div class="col">
+                  <li class="nav-item active">
+                    <button type="button" class="btn btn-secondary">
+                      <a class="nav-link" href="contacto.html"
+                        >Contactanos <span class="sr-only"></span
+                      ></a>
+                    </button>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Bienvenido al Restaurante XYZ</h1>
+          <p>
+            En el corazón de nuestra ciudad, el Restaurante XYZ se erige como un
+            oasis gastronómico que deleita los sentidos y reconforta el alma.
+            Con una atmósfera acogedora y un servicio impecable, nos enorgullece
+            ofrecer una experiencia culinaria única, donde cada plato es una
+            obra maestra elaborada con pasión y dedicación.
+          </p>
+          <h1>El Menú</h1>
+
+          <p>
+            Nuestro menú es una expresión de creatividad y pasión por la
+            gastronomía. Desde entradas irresistibles hasta postres exquisitos,
+            cada plato es una invitación a un viaje de sabores y texturas.
+            Inspirados en la riqueza culinaria de nuestra región, ofrecemos una
+            amplia variedad de opciones para satisfacer todos los gustos y
+            preferencias. Ya sea que prefieras los sabores reconfortantes de la
+            cocina casera o las delicias innovadoras de la alta cocina,
+            encontrarás algo que te deleitará en nuestro menú
+          </p>
+          <a href="reservas.html" class="btn btn-secondary">Hacer Reserva</a>
+        </div>
+        <div class="col-md-6">
+          <div class="productos">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <img
+                      class="card-img-top img-fluid"
+                      src="img/comida1.jpg"
+                      alt="comida"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">comida 1</h5>
+                      <p class="card-text">
+                       comida 1
+                      </p>
+                      <a href="menu.html" class="btn btn-primary">Ver menu</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img
+                      class="card-img-top img-fluid"
+                      src="img/comida2.webp"
+                      alt="comida"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">comida 2</h5>
+                      <p class="card-text">
+                       comida 2
+                      </p>
+                      <a href="menu.html" class="btn btn-primary">Ver menu</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <img
+                      class="card-img-top img-fluid"
+                      src="img/comida3.jpg"
+                      alt="comida"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">comida 3</h5>
+                      <p class="card-text">
+                       comida 3
+                      </p>
+                      <a href="menu.html" class="btn btn-primary">Ver menu</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>2024 Restaurante XYZ. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

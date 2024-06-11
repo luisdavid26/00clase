@@ -1,0 +1,26 @@
+.bloque {display:inline-block;}
+
+#martillo {
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+}
+
+#martillo-dinamica {
+    background-color: rosybrown;
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;
+}
+
+/*#martillo-dinamica:hover{transform: scale(1,-1);}*/
+
+#martillo-dinamica:hover{transform: rotate(60deg);}

@@ -1,0 +1,69 @@
+body {
+  border: 5px dashed burlywood;
+  max-width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px groove black;
+}
+
+nav {
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px groove black;
+}
+
+nav button {
+  margin: 0 10px;
+}
+
+.texto1,
+.texto2,
+.texto3,
+.texto4 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.texto1 h2,
+.texto2 h2,
+.texto3 h2,
+.texto4 h2 {
+  margin: 30px;
+  padding: 10px;
+  border: 5px dashed burlywood;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin: auto;
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  border-top: 3px groove black;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,22 @@
+/* Si la pantalla tiene de ancho 600px o menos es de color azul*/
+@media screen and (max-width: 600px) {
+    html {
+        background-color: lightblue;
+    }    
+}
+
+
+/*Si la pantalla tiene un tamaño entre 600 y 800px el color es coral*/
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    html{
+        background-color:coral;
+    }
+}
+
+/*Si la pantalla tiene un tamaño es mayor de 500px el color es coral*/
+
+@media screen and (min-width: 800px) {
+    html{
+        background-color: lightgreen;
+    }
+}

@@ -1,0 +1,15 @@
+body {
+     margin: 0px;
+     padding: 0px;
+}
+#webs {
+     justify-content: center;
+     align-items: center;
+     background-color: burlywood;
+     display: flex;
+     place-items: center;
+     flex-direction: column;
+}
+#webs img {
+     width: 200px;
+}

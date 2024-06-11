@@ -1,0 +1,62 @@
+body{
+
+  border: 5px dashed burlywood;
+  max-width: 1000px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+header {
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 3px groove  black;
+}
+
+nav {
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px groove  black;
+
+}
+nav button{
+    margin: 0 10px;
+
+}
+aside {
+  float: right;
+  padding: 30px;
+  width: 30%;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+section article{
+  margin: 10px;
+  padding: 10px;
+  border: 3px groove  black;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+footer {
+  margin: auto;
+  background-color: green;
+  text-align: center;
+  padding: 10px;
+  border-top: 3px groove  black;
+
+}

@@ -1,0 +1,26 @@
+.bloque{
+    display:inline-block;
+}
+
+#martillo {
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+}
+
+/* Se desplaza la distancia que se pone a la izquierda con respecto a la posición inicial*/
+#martillo-izqda {
+    position:relative;
+    background-color: rosybrown;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;
+    transform:translate(-100px);
+}

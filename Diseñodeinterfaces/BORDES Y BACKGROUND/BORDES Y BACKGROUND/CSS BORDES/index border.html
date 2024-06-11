@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BORDES</title>
+    <style>
+        body {text-align: center;}
+        #principal{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            border: 1px solid #999999;
+            font: bold 16px verdana, sans-serif;
+        }
+
+        #redondeado{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px;
+            -moz-border-radius:20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+        }
+        #redondeado-esquina{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius: 20px 10px 30px 50px;
+            -moz-border-radius:20px 10px 30px 50px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius: 20px 10px 30px 50px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+        }
+
+        #redondeado-dos-lados{
+            display: block;
+            width:500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+            background: #DDDDDD;
+            font: bold 16px verdana, sans-serif;
+            border-radius:50px 20px;
+            -moz-border-radius:50px 20px; /*para que funcione en navegadores basados en motores "Gedko"*/
+            -webkit-border-radius:50px 20px; /* para que funcione en navegadores basados en motores "WebKit", como Firefox, Safari, Google Chrome)*/
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h2>Borde normal</h2>
+    <header id="principal">
+        <h1>PROPIEDAD CSS BORDER</h1>
+    </header>
+
+    <h2>Bordes redondeado</h2>
+    <header id="redondeado">
+        <h1>PROPIEDAD CSS BORDER RADIUS</h1>
+    </header>
+
+    <h2>Bordes redondeado para cada esquina</h2>
+    <header id="redondeado-esquina">
+        <h1>PROPIEDAD CSS BORDER RADIUS EN CADA ESQUINA</h1>
+    </header>
+    <p>Los valores se aplican en el siguiente orden: esquina superior izquierda,
+        esquina superior derecha, esquina inferior derecha y esquina inferior izquierda
+    </p>
+
+    <h2>Bordes redondeado dos lados</h2>
+    <header id="redondeado-dos-valores">
+        <h1>PROPIEDAD CSS BORDER RADIUS EN CADA ESQUINA</h1>
+    </header>
+    <p>En este caso se aplican dos valores: el primer valor representa el 
+        radio horizontal, mientras que el segundo valor representa al radio 
+        vertical</p> 
+
+
+
+</body>
+</html>

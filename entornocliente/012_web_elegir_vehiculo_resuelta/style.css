@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(213, 127, 213);
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    background-color: rgb(225, 89, 89);
+    border: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 95%;
+}
+p{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(204, 217, 13);
+    border-radius: 8px;
+    width: 75%;
+}
+#segundo_parrafo{
+    background-color: rgb(135, 222, 163);
+    font-size: 20px;
+}

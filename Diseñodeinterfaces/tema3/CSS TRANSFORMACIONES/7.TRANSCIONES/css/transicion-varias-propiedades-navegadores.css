@@ -1,0 +1,26 @@
+
+
+/* Transiciones válidas para todos los navegadores*/
+/* Efecto espejo*/
+
+#martillo {
+   position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+    transition:transform 1s linear 0.5s;
+    transition:moz-transform 1s linear 0.5s;
+    transition:webkit-transform 1s linear 0.5s;
+    transition:o-transform 1s linear 0.5s;
+    transition:ms-transform 1s linear 0.5s;
+}
+
+#martillo:hover {transform:scale(1,-1);
+                            moz-transform:scale(1,-1);
+                            webkit-transform:scale(1,-1);
+                            o-transform:scale(1,-1);
+                            ms-transform:scale(1,-1);
+                        }

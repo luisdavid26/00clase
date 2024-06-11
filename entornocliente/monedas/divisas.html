@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Configurar elementos</title>
+          <link rel="stylesheet" href="estilos.css" />
+     </head>
+
+     <body>
+          <div id="div_encabezado">
+               <h1>PROMESAS</h1>
+               <h3>Ver consola</h3>
+          </div>
+          <div id="div_botones">
+               <p>
+                    <input type="number" id="amount" placeholder="cantidad a cambiar">
+                    <input type="text" id="divisaFrom" placeholder="divisa origen">
+                    <input type="text" id="divisaTo" placeholder="divisa destino">
+
+                    <button id="fetchUno">Cambiar</button>
+                    <button id="fetchDos">Divisas</button>
+               </p>
+          </div>
+          <div id="div_izquierdo">
+               <p id="exchange"></p>
+          </div>
+          <div id="div_derecho">
+               <p id="divisas"></p>
+          </div>
+          <script src="promesas_explicaciones.js"></script>
+     </body>
+</html>

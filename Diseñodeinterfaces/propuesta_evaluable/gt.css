@@ -1,0 +1,185 @@
+/* Estilos generales */
+
+body {
+  margin: 0;
+}
+
+/* Estilos del encabezado */
+header {
+  height: 20%;
+  width: 80%;
+  margin: 20px auto;
+  background: url(imagenes/gt2logo.png) center/contain no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  transition: height 0.3s ease; /* Agregado efecto de transición para el encabezado */
+}
+
+h1 {
+  font-family: 'Exo', sans-serif;
+  font-size: 6vw;
+  text-shadow: 0 0 20px rgb(132, 56, 56);
+}
+
+nav .menu {
+  list-style: none;
+  margin-left: 5%;
+  margin-bottom: 10%;
+
+}
+
+nav .menu li {
+  display: inline-block;
+  position: relative; /* Añadido para establecer una posición relativa en el ítem del menú */
+}
+
+nav .menu a {
+  background-color: rgba(235, 0, 0, 0.2);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  display: block;
+}
+
+nav .menu a:hover {
+  background-color: rgba(0, 158, 79, 0.3);
+}
+
+nav .submenu {
+  display: none;
+  position: absolute;
+
+  top: 100%; /* Añadido para posicionar el desplegable debajo del ítem principal */
+}
+
+nav .menu:hover .submenu {
+  display: block;
+}
+
+nav .submenu li {
+  display: block;
+}
+
+
+.contenedor_body {
+  margin: 0 auto;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #666, #ff0000);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: padding 0.3s ease; /* Agregado efecto de transición para el contenido */
+}
+
+/* Estilos de grupos */
+.grupo {
+  display: flex;
+  align-items: center;
+}
+
+.caja {
+  border-radius: 10px;
+  background: linear-gradient(to bottom left, rgba(5, 5, 130, 0.587), gray);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.caja_redonda {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 20%;
+  height: 150px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: 20px;
+  transition: width 0.3s ease; /* Agregado efecto de transición para las cajas redondas */
+}
+
+.caja_redonda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s;
+}
+
+.caja_redonda img:hover {
+  transform: scale(1.5);
+  filter: saturate(150%);
+}
+
+.caja p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 10px;
+}
+
+/* Media queries para tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+      height: 15%;
+      min-height: 200px; /* Ajusta este valor según tus necesidades */
+  }
+
+  h1 {
+      font-size: 4vw;
+  }
+
+  nav ul {
+      gap: 15px;
+  }
+
+  nav a {
+      padding: 8px 12px;
+  }
+
+  .contenedor_body {
+      padding: 15px;
+  }
+
+  .grupo {
+      flex-direction: column;
+  }
+
+  .caja_redonda {
+      width: 40%;
+      margin-bottom: 15px;
+      margin-left: 0;
+      margin-right: 0;
+  }
+}
+
+/* Media queries para moviles */
+@media screen and (max-width: 767px) {
+  header {
+      height: 15%;
+      min-height: 150px; /* Ajusta este valor según tus necesidades */
+  }
+
+  h1 {
+      font-size: 3vw;
+  }
+
+  .contenedor_body {
+      padding: 10px;
+  }
+
+  .grupo {
+      flex-direction: column;
+  }
+
+  .caja_redonda {
+      width: 50%;
+      margin-right: 0;
+  }
+}

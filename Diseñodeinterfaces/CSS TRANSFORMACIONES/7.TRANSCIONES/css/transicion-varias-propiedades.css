@@ -1,0 +1,22 @@
+#img{display:inline-block;}
+
+
+#martillo {
+    position:relative;
+    width:250px;
+    height:250px;
+    padding:16px;
+    border:1px dotted gray;
+    border-radius:9px;
+    float:left;  
+    /* Las propiedades que se modifican de la propiedad transition son: background-color, anchura,
+    altura y el ancho del borde*/
+    transition:background-color 1s, width 1s, height 1s, border-width 1s;
+}
+
+/* Al pasar el ratón por encima del martillo se aplican los cambios a las propiedades indicadas*/
+#martillo:hover {background-color:red;
+                width: 275px;
+                height:275px;
+                border-width: 10px;}
+

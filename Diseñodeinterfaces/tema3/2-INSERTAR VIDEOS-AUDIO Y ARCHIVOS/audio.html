@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar audio</title>
+</head>
+<body>
+    <h1>INSERTAR AUDIO</h1>
+    <p>La etiqueta de HTML5 que permite inscrutar audio es (audio).</p>
+    <p>Esta etiqueta posee varios atributos con la etiqueta (video)</p>
+    <p>Se utiliza la etiqueta audio con los siguientes atributos:
+        <ul>
+            <li>src: dirección en la que está guardado el audio.<br>
+            Este atributo puede ser sustituido por el elemento <source> y su atributo <source>
+            para declarar varias fuentes con diferentes formatos. Ver código de la etiqueta más abajo</li>
+            <li>controls: muestra los controles del vídeo provisto por el navegador. Permite al usuario
+                comenzar a reproducir el audio, pausarlo o saltar hacia un cuadro específico, entre otras
+                funciones.
+            </li>
+            <li>autoplay: el audio comenzará a reproducirse automáticamente tan pronto como sea posible.</li>
+            <li>loop: el navegador reproduce el audio nuevamente cuando llega al final de forma automática.</li>
+
+            <li>preload: atributo que admite tres valores:
+                <ul>
+                    <li>none: indica que el audio se reproduce directamente sin guardarse en la memoria caché </li>
+                    <li>metadata: recomienda al navegador capturar información acerca de la fuente, como la duración.</li>
+                    <li>auto: valor por defecto e indica al navegador descargar el archivo tan pronto como sea posible.</li>
+                </ul>
+            </li>  
+        </ul>
+    </p>
+    <p>Los navegadores soportan las extensiones de los ficheros .mp3 y .ogg.</p>
+    <h2>Audio inscrustado</h2>
+    <audio controls loop preload >
+        <source src="./sonidos/sonido.mp3">
+        <source src="./sonidos/sonido.ogg"> (en caso de existir)
+    </audio>
+</body>
+</html>

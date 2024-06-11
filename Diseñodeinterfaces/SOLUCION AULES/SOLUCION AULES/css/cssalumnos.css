@@ -1,0 +1,37 @@
+h1{font-style: bold; 
+    font-size: 2em;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;}
+
+h2{font-style: bold; 
+    font-size: 1.5em;
+   font-family:Verdana, Geneva, Tahoma, sans-serif; }
+
+h3{font-style: bold; 
+    font-size: 1em;
+   font-family:Verdana, Geneva, Tahoma, sans-serif; }
+
+#contenedor{
+    width: 960px;
+    margin:15px;
+    text-align: left;
+}
+
+#header{
+    background-color: #FFFBB9;
+    padding: 20px;
+    border: 1px solid #999999;
+}
+
+#nav{ color:#cccccc;
+    padding: 5px 15px;
+    }
+
+#nav li{
+    padding:15px;
+    font-style: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    list-style: none;
+}
+
+ 
